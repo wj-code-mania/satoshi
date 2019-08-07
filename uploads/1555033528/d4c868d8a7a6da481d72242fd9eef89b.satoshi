@@ -1,0 +1,96 @@
+/*
+Navicat MySQL Data Transfer
+
+Source Server         : local
+Source Server Version : 50532
+Source Host           : 127.0.0.1:3306
+Source Database       : satoshi_db
+
+Target Server Type    : MYSQL
+Target Server Version : 50532
+File Encoding         : 65001
+
+Date: 2019-04-11 12:44:43
+*/
+
+SET FOREIGN_KEY_CHECKS=0;
+
+-- ----------------------------
+-- Table structure for tbl_box
+-- ----------------------------
+DROP TABLE IF EXISTS `tbl_box`;
+CREATE TABLE `tbl_box` (
+  `id` int(11) NOT NULL DEFAULT '0',
+  `category` varchar(64) CHARACTER SET utf8 DEFAULT NULL,
+  `title` varchar(32) CHARACTER SET utf8 DEFAULT NULL,
+  `box_name` varchar(64) CHARACTER SET utf8 DEFAULT NULL,
+  `price` decimal(10,0) DEFAULT NULL,
+  `coin_type` tinyint(4) DEFAULT NULL,
+  `seller_account` varchar(64) CHARACTER SET utf8 DEFAULT NULL,
+  `user_id` int(11) DEFAULT '0',
+  `description` varchar(140) CHARACTER SET utf8 DEFAULT NULL,
+  `box_image` varchar(255) CHARACTER SET utf8 DEFAULT NULL,
+  `reg_time` date DEFAULT NULL,
+  `views_cnt` int(11) DEFAULT NULL,
+  `is_once_only` int(11) DEFAULT '0',
+  `is_show` tinyint(4) DEFAULT '1',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- ----------------------------
+-- Records of tbl_box
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for tbl_rating
+-- ----------------------------
+DROP TABLE IF EXISTS `tbl_rating`;
+CREATE TABLE `tbl_rating` (
+  `id` int(11) NOT NULL DEFAULT '0',
+  `box_id` int(11) DEFAULT NULL,
+  `rating` decimal(11,1) DEFAULT NULL,
+  `comment` varchar(140) CHARACTER SET utf8 DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- ----------------------------
+-- Records of tbl_rating
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for tbl_trade
+-- ----------------------------
+DROP TABLE IF EXISTS `tbl_trade`;
+CREATE TABLE `tbl_trade` (
+  `id` int(11) NOT NULL DEFAULT '0',
+  `reg_date` date DEFAULT NULL,
+  `from_account` varchar(64) CHARACTER SET utf8 DEFAULT NULL,
+  `from_user_id` int(11) DEFAULT NULL,
+  `to_account` varchar(64) CHARACTER SET utf8 DEFAULT NULL,
+  `to_user_id` int(11) DEFAULT NULL,
+  `coin_type` tinyint(11) DEFAULT NULL,
+  `amount` decimal(11,5) DEFAULT NULL,
+  `box_id` int(11) DEFAULT NULL,
+  `is_withdrawal` tinyint(4) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- ----------------------------
+-- Records of tbl_trade
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for tbl_user
+-- ----------------------------
+DROP TABLE IF EXISTS `tbl_user`;
+CREATE TABLE `tbl_user` (
+  `PID` int(11) NOT NULL DEFAULT '0',
+  `user_name` varchar(32) CHARACTER SET utf8 DEFAULT NULL,
+  `password` varchar(32) CHARACTER SET utf8 DEFAULT NULL,
+  `email` varchar(32) CHARACTER SET utf8 DEFAULT NULL,
+  PRIMARY KEY (`PID`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- ----------------------------
+-- Records of tbl_user
+-- ----------------------------

@@ -1,0 +1,8 @@
+.has-error #advancedDropzone{
+	border-color:red;
+	color:red;
+}
+.has-error .empty_row{
+	border-color:red;
+	color:red;
+}

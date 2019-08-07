@@ -1,0 +1,98 @@
+/**
+ *
+ * Apply your custom CSS here
+ *
+*/
+
+body {	
+}
+
+a {
+}
+h1.title{
+	color:#000;
+}
+.description_textarea
+{
+    width: 100%;
+    height: 150px;
+}
+.list-menu-item{
+	margin-left: 15px;
+    display: inline-block;
+    vertical-align: top;
+    width: 90%;
+    position: relative;
+}
+.list-toggle-container{
+    color: #fff!important;
+}
+.list-toggle{
+	padding: 15px;
+	background: #2f353b!important;
+	
+}
+.list-toggle-title{
+	
+}
+.task-list{
+	border: 1px solid #e5e5e5;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+.task-list ul{
+    padding: 0px;
+    width: 100%;
+    margin-bottom: 0px !important;
+    list-style: none !important;
+}
+.task-list-item{
+    padding: 12px 7px;
+
+    border-bottom: 1px solid;
+    border-color: #e7ecf1;
+}
+
+li.task-list-item a{
+    width: 100%;
+    padding-left: 10px;
+}
+
+.portlet .form-group label{
+	color:#000;font-weight:bold;
+}
+
+.mail-header h3 {
+     margin: 0; 
+}
+
+.mail-header {
+    border-bottom: 1px solid #dddddd;
+    padding-bottom: 10px;
+}
+
+.header-left-link{
+	float:left
+}
+.xe-widget.xe-counter-block .xe-lower, .xe-widget.xe-progress-counter .xe-lower {
+    padding: 6px 30px;
+}
+.hide-clipboard-input
+{
+	border:none;border-color:#fff;width:5px;height:0px;
+	position: absolute;left:-1000px;
+}
+
+.copy-clipboard {
+    float: right;
+}
+
+.withdrawal-form:first-child {
+    margin-top: 0px;
+}
+
+.withdrawal-form {
+    margin-top: 20px;
+}

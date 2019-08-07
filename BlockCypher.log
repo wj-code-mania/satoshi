@@ -1,0 +1,205 @@
+[13-05-2019 09:52:28] BlockCypher\Core\BlockCypherHttpConnection: INFO	: POST https://api.blockcypher.com/v1/btc/main/txs/new?token=c9991312729a43058e58e1d7d51061ad
+[13-05-2019 09:52:29] BlockCypher\Core\BlockCypherHttpConnection: DEBUG	: Request Headers 	: POST /v1/btc/main/txs/new?token=c9991312729a43058e58e1d7d51061ad HTTP/1.1, Host: api.blockcypher.com, Accept: */*, Content-Type: application/json, User-Agent: BlockCypherSDK/BlockCypher-PHP-SDK 1.5.0 (lang=PHP;v=7.2.9;bit=32;os=Windows_NT_10.0;machine=i586;openssl=1.1.0i;curl=7.59.0), BlockCypher-Request-Id: 1236155777714856783, Content-Length: 143, , 
+[13-05-2019 09:52:29] BlockCypher\Core\BlockCypherHttpConnection: DEBUG	: Request Data		: {"inputs":[{"addresses":["14Q39PYo66Czq6FPqk7zGKzj8xD97oHeor"]}],"outputs":[{"addresses":["16GAP2qniD6sW8KGhGpDKqaexq81TXGiti"],"value":1000}]}
+--------------------------------------------------------------------------------------------------------------------------------
+
+[13-05-2019 09:52:29] BlockCypher\Core\BlockCypherHttpConnection: INFO	: Response Status 	: 201
+[13-05-2019 09:52:29] BlockCypher\Core\BlockCypherHttpConnection: DEBUG	: Response Headers	: HTTP/1.1 201 Created, Server: nginx/1.10.3 (Ubuntu), Date: Mon, 13 May 2019 19:52:30 GMT, Content-Type: application/json, Content-Length: 1480, Connection: keep-alive, Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, Access-Control-Allow-Methods: GET, POST, PUT, DELETE, Access-Control-Allow-Origin: *, X-Ratelimit-Remaining: 199, , 
+[13-05-2019 09:52:29] BlockCypher\Core\BlockCypherHttpConnection: DEBUG	: Response Data 	: {
+  "tx": {
+    "block_height": -1,
+    "block_index": -1,
+    "hash": "35906ee031240727c27ca615778e3eddfa3c3848f49d8d416f27de32911223b8",
+    "addresses": [
+      "16GAP2qniD6sW8KGhGpDKqaexq81TXGiti",
+      "14Q39PYo66Czq6FPqk7zGKzj8xD97oHeor"
+    ],
+    "total": 84000,
+    "fees": 16000,
+    "size": 119,
+    "preference": "high",
+    "relayed_by": "183.182.112.219",
+    "received": "2019-05-13T19:52:30.018855658Z",
+    "ver": 1,
+    "double_spend": false,
+    "vin_sz": 1,
+    "vout_sz": 2,
+    "confirmations": 0,
+    "inputs": [
+      {
+        "prev_hash": "ec8a883edf18258f7cf5c94826d5055ddff54e7f2242dfeee79339b707a7d8b9",
+        "output_index": 2,
+        "output_value": 100000,
+        "sequence": 4294967295,
+        "addresses": [
+          "14Q39PYo66Czq6FPqk7zGKzj8xD97oHeor"
+        ],
+        "script_type": "pay-to-pubkey-hash",
+        "age": 573500
+      }
+    ],
+    "outputs": [
+      {
+        "value": 1000,
+        "script": "76a91439b6b2c0f1a97293e88d439ad043ea2255cdd85788ac",
+        "addresses": [
+          "16GAP2qniD6sW8KGhGpDKqaexq81TXGiti"
+        ],
+        "script_type": "pay-to-pubkey-hash"
+      },
+      {
+        "value": 83000,
+        "script": "76a9142543bc16c88713be85017f3162e37bdbf952d01488ac",
+        "addresses": [
+          "14Q39PYo66Czq6FPqk7zGKzj8xD97oHeor"
+        ],
+        "script_type": "pay-to-pubkey-hash"
+      }
+    ]
+  },
+  "tosign": [
+    "d985d5b01e6c4180947a4a2a3109b90ebe4dd0e3d85b3406845587dd79272b19"
+  ]
+}
+
+================================================================================================================================
+
+[13-05-2019 09:52:29] BlockCypher\Validation\ModelAccessorValidator: DEBUG	: Missing Accessor: BlockCypher\Api\TX:setBlockIndex. You might be using older version of SDK. If not, create an issue at https://github.com/blockcypher/php-client/issues
+[13-05-2019 09:52:29] BlockCypher\Validation\ModelAccessorValidator: DEBUG	: Missing Accessor: BlockCypher\Api\TX:setBlockIndex. You might be using older version of SDK. If not, create an issue at https://github.com/blockcypher/php-client/issues
+[13-05-2019 09:54:50] BlockCypher\Core\BlockCypherHttpConnection: INFO	: POST https://api.blockcypher.com/v1/btc/main/txs/new?token=c9991312729a43058e58e1d7d51061ad
+[13-05-2019 09:54:51] BlockCypher\Core\BlockCypherHttpConnection: DEBUG	: Request Headers 	: POST /v1/btc/main/txs/new?token=c9991312729a43058e58e1d7d51061ad HTTP/1.1, Host: api.blockcypher.com, Accept: */*, Content-Type: application/json, User-Agent: BlockCypherSDK/BlockCypher-PHP-SDK 1.5.0 (lang=PHP;v=7.2.9;bit=32;os=Windows_NT_10.0;machine=i586;openssl=1.1.0i;curl=7.59.0), BlockCypher-Request-Id: 1630015577772901514, Content-Length: 143, , 
+[13-05-2019 09:54:51] BlockCypher\Core\BlockCypherHttpConnection: DEBUG	: Request Data		: {"inputs":[{"addresses":["14Q39PYo66Czq6FPqk7zGKzj8xD97oHeor"]}],"outputs":[{"addresses":["16GAP2qniD6sW8KGhGpDKqaexq81TXGiti"],"value":1000}]}
+--------------------------------------------------------------------------------------------------------------------------------
+
+[13-05-2019 09:54:51] BlockCypher\Core\BlockCypherHttpConnection: INFO	: Response Status 	: 201
+[13-05-2019 09:54:51] BlockCypher\Core\BlockCypherHttpConnection: DEBUG	: Response Headers	: HTTP/1.1 201 Created, Server: nginx/1.10.3 (Ubuntu), Date: Mon, 13 May 2019 19:54:51 GMT, Content-Type: application/json, Content-Length: 1480, Connection: keep-alive, Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, Access-Control-Allow-Methods: GET, POST, PUT, DELETE, Access-Control-Allow-Origin: *, X-Ratelimit-Remaining: 198, , 
+[13-05-2019 09:54:51] BlockCypher\Core\BlockCypherHttpConnection: DEBUG	: Response Data 	: {
+  "tx": {
+    "block_height": -1,
+    "block_index": -1,
+    "hash": "35906ee031240727c27ca615778e3eddfa3c3848f49d8d416f27de32911223b8",
+    "addresses": [
+      "14Q39PYo66Czq6FPqk7zGKzj8xD97oHeor",
+      "16GAP2qniD6sW8KGhGpDKqaexq81TXGiti"
+    ],
+    "total": 84000,
+    "fees": 16000,
+    "size": 119,
+    "preference": "high",
+    "relayed_by": "183.182.112.219",
+    "received": "2019-05-13T19:54:51.655707164Z",
+    "ver": 1,
+    "double_spend": false,
+    "vin_sz": 1,
+    "vout_sz": 2,
+    "confirmations": 0,
+    "inputs": [
+      {
+        "prev_hash": "ec8a883edf18258f7cf5c94826d5055ddff54e7f2242dfeee79339b707a7d8b9",
+        "output_index": 2,
+        "output_value": 100000,
+        "sequence": 4294967295,
+        "addresses": [
+          "14Q39PYo66Czq6FPqk7zGKzj8xD97oHeor"
+        ],
+        "script_type": "pay-to-pubkey-hash",
+        "age": 573500
+      }
+    ],
+    "outputs": [
+      {
+        "value": 1000,
+        "script": "76a91439b6b2c0f1a97293e88d439ad043ea2255cdd85788ac",
+        "addresses": [
+          "16GAP2qniD6sW8KGhGpDKqaexq81TXGiti"
+        ],
+        "script_type": "pay-to-pubkey-hash"
+      },
+      {
+        "value": 83000,
+        "script": "76a9142543bc16c88713be85017f3162e37bdbf952d01488ac",
+        "addresses": [
+          "14Q39PYo66Czq6FPqk7zGKzj8xD97oHeor"
+        ],
+        "script_type": "pay-to-pubkey-hash"
+      }
+    ]
+  },
+  "tosign": [
+    "d985d5b01e6c4180947a4a2a3109b90ebe4dd0e3d85b3406845587dd79272b19"
+  ]
+}
+
+================================================================================================================================
+
+[13-05-2019 09:54:51] BlockCypher\Validation\ModelAccessorValidator: DEBUG	: Missing Accessor: BlockCypher\Api\TX:setBlockIndex. You might be using older version of SDK. If not, create an issue at https://github.com/blockcypher/php-client/issues
+[13-05-2019 09:54:51] BlockCypher\Validation\ModelAccessorValidator: DEBUG	: Missing Accessor: BlockCypher\Api\TX:setBlockIndex. You might be using older version of SDK. If not, create an issue at https://github.com/blockcypher/php-client/issues
+[13-05-2019 09:54:52] BlockCypher\Core\BlockCypherHttpConnection: INFO	: POST https://api.blockcypher.com/v1/btc/main/txs/send?token=c9991312729a43058e58e1d7d51061ad
+[13-05-2019 09:54:53] BlockCypher\Core\BlockCypherHttpConnection: DEBUG	: Request Headers 	: POST /v1/btc/main/txs/send?token=c9991312729a43058e58e1d7d51061ad HTTP/1.1, Host: api.blockcypher.com, Accept: */*, Content-Type: application/json, User-Agent: BlockCypherSDK/BlockCypher-PHP-SDK 1.5.0 (lang=PHP;v=7.2.9;bit=32;os=Windows_NT_10.0;machine=i586;openssl=1.1.0i;curl=7.59.0), BlockCypher-Request-Id: 1630015577772901514, Content-Length: 1316, Expect: 100-continue, , 
+[13-05-2019 09:54:53] BlockCypher\Core\BlockCypherHttpConnection: DEBUG	: Request Data		: {"tx":{"block_height":-1,"block_index":-1,"hash":"35906ee031240727c27ca615778e3eddfa3c3848f49d8d416f27de32911223b8","addresses":["14Q39PYo66Czq6FPqk7zGKzj8xD97oHeor","16GAP2qniD6sW8KGhGpDKqaexq81TXGiti"],"total":84000,"fees":16000,"size":119,"preference":"high","relayed_by":"183.182.112.219","received":"2019-05-13T19:54:51.655707164Z","ver":1,"double_spend":false,"vin_sz":1,"vout_sz":2,"confirmations":0,"inputs":[{"prev_hash":"ec8a883edf18258f7cf5c94826d5055ddff54e7f2242dfeee79339b707a7d8b9","output_index":2,"output_value":100000,"sequence":4294967295,"addresses":["14Q39PYo66Czq6FPqk7zGKzj8xD97oHeor"],"script_type":"pay-to-pubkey-hash","age":573500}],"outputs":[{"value":1000,"script":"76a91439b6b2c0f1a97293e88d439ad043ea2255cdd85788ac","addresses":["16GAP2qniD6sW8KGhGpDKqaexq81TXGiti"],"script_type":"pay-to-pubkey-hash"},{"value":83000,"script":"76a9142543bc16c88713be85017f3162e37bdbf952d01488ac","addresses":["14Q39PYo66Czq6FPqk7zGKzj8xD97oHeor"],"script_type":"pay-to-pubkey-hash"}]},"tosign":["d985d5b01e6c4180947a4a2a3109b90ebe4dd0e3d85b3406845587dd79272b19"],"signatures":["304402203866a9bc18eba5943a68eb2d493292c12c66c4b9695d3ea15c58133d6c1dfa62022058ca4ed0f1372bec89edf6b9d00ef1ea1f7e2b8cc07fcbf9c86d6826805fd61c"],"pubkeys":["03b0268137e9f6fcbc5603c978e01385b4472081f1b15bd50b62a4a1e00ac5932e"]}
+--------------------------------------------------------------------------------------------------------------------------------
+
+[13-05-2019 09:54:53] BlockCypher\Core\BlockCypherHttpConnection: INFO	: Response Status 	: 201
+[13-05-2019 09:54:53] BlockCypher\Core\BlockCypherHttpConnection: DEBUG	: Response Headers	: HTTP/1.1 100 Continue, , HTTP/1.1 201 Created, Server: nginx/1.10.3 (Ubuntu), Date: Mon, 13 May 2019 19:54:53 GMT, Content-Type: application/json, Content-Length: 1650, Connection: keep-alive, Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, Access-Control-Allow-Methods: GET, POST, PUT, DELETE, Access-Control-Allow-Origin: *, X-Ratelimit-Remaining: 198, , 
+[13-05-2019 09:54:53] BlockCypher\Core\BlockCypherHttpConnection: DEBUG	: Response Data 	: {
+  "tx": {
+    "block_height": -1,
+    "block_index": -1,
+    "hash": "4aae87f7f04f54853a015ab336f08171061bf8bb14f2c74ed5aa99106f7a3e4a",
+    "addresses": [
+      "16GAP2qniD6sW8KGhGpDKqaexq81TXGiti",
+      "14Q39PYo66Czq6FPqk7zGKzj8xD97oHeor"
+    ],
+    "total": 84000,
+    "fees": 16000,
+    "size": 225,
+    "preference": "high",
+    "relayed_by": "183.182.112.219",
+    "received": "2019-05-13T19:54:53.813507268Z",
+    "ver": 1,
+    "double_spend": false,
+    "vin_sz": 1,
+    "vout_sz": 2,
+    "confirmations": 0,
+    "inputs": [
+      {
+        "prev_hash": "ec8a883edf18258f7cf5c94826d5055ddff54e7f2242dfeee79339b707a7d8b9",
+        "output_index": 2,
+        "script": "47304402203866a9bc18eba5943a68eb2d493292c12c66c4b9695d3ea15c58133d6c1dfa62022058ca4ed0f1372bec89edf6b9d00ef1ea1f7e2b8cc07fcbf9c86d6826805fd61c012103b0268137e9f6fcbc5603c978e01385b4472081f1b15bd50b62a4a1e00ac5932e",
+        "output_value": 100000,
+        "sequence": 4294967295,
+        "addresses": [
+          "14Q39PYo66Czq6FPqk7zGKzj8xD97oHeor"
+        ],
+        "script_type": "pay-to-pubkey-hash",
+        "age": 573500
+      }
+    ],
+    "outputs": [
+      {
+        "value": 1000,
+        "script": "76a91439b6b2c0f1a97293e88d439ad043ea2255cdd85788ac",
+        "addresses": [
+          "16GAP2qniD6sW8KGhGpDKqaexq81TXGiti"
+        ],
+        "script_type": "pay-to-pubkey-hash"
+      },
+      {
+        "value": 83000,
+        "script": "76a9142543bc16c88713be85017f3162e37bdbf952d01488ac",
+        "addresses": [
+          "14Q39PYo66Czq6FPqk7zGKzj8xD97oHeor"
+        ],
+        "script_type": "pay-to-pubkey-hash"
+      }
+    ]
+  },
+  "tosign": [
+    ""
+  ]
+}
+
+================================================================================================================================
+
+[13-05-2019 09:54:53] BlockCypher\Validation\ModelAccessorValidator: DEBUG	: Missing Accessor: BlockCypher\Api\TX:setBlockIndex. You might be using older version of SDK. If not, create an issue at https://github.com/blockcypher/php-client/issues
+[13-05-2019 09:54:53] BlockCypher\Validation\ModelAccessorValidator: DEBUG	: Missing Accessor: BlockCypher\Api\TX:setBlockIndex. You might be using older version of SDK. If not, create an issue at https://github.com/blockcypher/php-client/issues
